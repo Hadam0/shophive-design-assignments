@@ -7,7 +7,7 @@
 Claude (AI assistant) connected to Figma, used to generate the sitemap and first wireframes. Edits were made by hand in Figma.
 
 ## Figma link
-https://www.figma.com/design/UwaeIAxZWKL9vcxBfsEGLA/FLEXISAF
+https://www.figma.com/design/UwaeIAxZWKL9vcxBfsEGLA/Week2_AISitemap_AdamHamzat?node-id=2069-3&t=usUA7UjemerPZRwy-1
 
 ## What is in this folder
 - Week2_AISitemap_AdamHamzat.docx: submission note
