@@ -1,0 +1,1500 @@
+.shophive-website {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  background-color: var(--colors-neutral-0);
+}
+
+.shophive-website .frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.shophive-website .header-wrapper {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 69px;
+}
+
+.shophive-website .header {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  align-items: center;
+  position: relative;
+  background-color: var(--colors-neutral-0);
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-left-style: none;
+  border-color: var(--colors-neutral-200);
+}
+
+.shophive-website .container {
+  display: flex;
+  flex-direction: column;
+  width: 1120px;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.shophive-website .header-row {
+  display: flex;
+  height: 68px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.shophive-website .div {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.shophive-website .logo-mark {
+  position: relative;
+  width: 34px;
+  height: 34px;
+}
+
+.shophive-website .text-wrapper {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: var(--colors-neutral-900);
+  font-size: 20px;
+  letter-spacing: -0.4px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.shophive-website .nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 28px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.shophive-website .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: var(--colors-neutral-500);
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.shophive-website .button-join-the {
+  display: inline-flex;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 22px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--colors-primary-600);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.shophive-website .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--colors-neutral-0);
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.shophive-website .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 56px 160px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background: linear-gradient(
+    113deg,
+    rgba(240, 250, 245, 1) 0%,
+    rgba(142, 148, 145, 1) 100%
+  );
+  background-color: var(--colors-primary-50);
+}
+
+.shophive-website .hero-row-wrapper {
+  width: 1120px;
+  align-items: flex-start;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.shophive-website .hero-row {
+  height: 580px;
+  align-items: center;
+  gap: 48px;
+  align-self: stretch;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.shophive-website .hero-text {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  flex: 1;
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+}
+
+.shophive-website .made-for-nigerian-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--colors-primary-100);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.shophive-website .made-for-nigerian {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--colors-primary-600);
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.shophive-website .shop-trusted-sellers {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: var(--colors-neutral-900);
+  font-size: 60px;
+  letter-spacing: -1.8px;
+  line-height: 64.8px;
+}
+
+.shophive-website .span {
+  color: #111827;
+  letter-spacing: -1.08px;
+}
+
+.shophive-website .text-wrapper-4 {
+  color: #0b6e4f;
+  letter-spacing: -1.08px;
+}
+
+.shophive-website .p {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--colors-neutral-500);
+  font-size: 19px;
+  letter-spacing: 0;
+  line-height: 28.5px;
+}
+
+.shophive-website .CTA {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 12px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.shophive-website .div-wrapper {
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 22px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--colors-primary-600);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.shophive-website .button-become-a {
+  display: inline-flex;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 22px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--colors-neutral-0);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1.5px solid;
+  border-color: var(--colors-neutral-200);
+}
+
+.shophive-website .text-wrapper-5 {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--colors-neutral-900);
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.shophive-website .trust {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 8px 20px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.shophive-website .frame-2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.shophive-website .icon-check {
+  position: relative;
+  width: 18px;
+  height: 18px;
+}
+
+.shophive-website .vector {
+  position: absolute;
+  width: 88.89%;
+  height: 80.56%;
+  top: 19.44%;
+  left: 11.11%;
+}
+
+.shophive-website .text-wrapper-6 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.5px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--colors-neutral-500);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.shophive-website .phone-stage {
+  position: relative;
+  width: 440px;
+  height: 580px;
+}
+
+.shophive-website .group {
+  position: relative;
+  left: 10px;
+  width: 412px;
+  height: 580px;
+}
+
+.shophive-website .ellipse {
+  position: absolute;
+  top: 69px;
+  left: 0;
+  width: 412px;
+  height: 412px;
+  background-color: var(--colors-primary-500);
+  border-radius: 206px;
+}
+
+.shophive-website .phone-mock {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  height: 580px;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 14px;
+  position: absolute;
+  top: 0;
+  left: 65px;
+  background-color: var(--colors-neutral-0);
+  border-radius: 40px;
+  overflow: hidden;
+  border: 8px solid;
+  border-color: #0f172a;
+}
+
+.shophive-website .frame-3 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.shophive-website .text-wrapper-7 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--colors-neutral-900);
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.shophive-website .text-wrapper-8 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--colors-neutral-500);
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.shophive-website .frame-4 {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  gap: 6px;
+  padding: 0px 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: var(--colors-neutral-100);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.shophive-website .icon-search {
+  position: relative;
+  width: 12px;
+  height: 12px;
+}
+
+.shophive-website .img {
+  position: absolute;
+  width: 95.83%;
+  height: 95.83%;
+  top: 4.17%;
+  left: 4.17%;
+}
+
+.shophive-website .vector-2 {
+  position: absolute;
+  width: 38.75%;
+  height: 38.75%;
+  top: 61.25%;
+  left: 61.25%;
+}
+
+.shophive-website .text-wrapper-9 {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--colors-neutral-500);
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.shophive-website .frame-5 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 6px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.shophive-website .frame-6 {
+  display: inline-flex;
+  align-items: flex-start;
+  padding: 4px 9px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--colors-primary-600);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.shophive-website .text-wrapper-10 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: var(--colors-neutral-0);
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.shophive-website .frame-7 {
+  display: inline-flex;
+  align-items: flex-start;
+  padding: 4px 9px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--colors-neutral-100);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.shophive-website .text-wrapper-11 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: var(--colors-neutral-500);
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.shophive-website .frame-8 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 7px 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--colors-accent-100);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.shophive-website .text-wrapper-12 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #b45309;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.shophive-website .frame-9 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.shophive-website .frame-10 {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.shophive-website .frame-11 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.shophive-website .image-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 68px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: var(--colors-neutral-100);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.shophive-website .image {
+  position: relative;
+  width: 69px;
+  height: 68px;
+  aspect-ratio: 1.03;
+}
+
+.shophive-website .text-wrapper-13 {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--colors-neutral-900);
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.shophive-website .text-wrapper-14 {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--colors-neutral-500);
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.shophive-website .frame-12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--colors-primary-600);
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.shophive-website .text-wrapper-15 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--colors-neutral-0);
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.shophive-website .image-2 {
+  position: relative;
+  width: 57px;
+  height: 68px;
+  aspect-ratio: 0.83;
+}
+
+.shophive-website .image-3 {
+  position: relative;
+  width: 45px;
+  height: 68px;
+  aspect-ratio: 0.58;
+}
+
+.shophive-website .image-4 {
+  position: relative;
+  width: 68px;
+  height: 67px;
+  aspect-ratio: 1.02;
+  object-fit: cover;
+}
+
+.shophive-website .container-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 72px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--colors-neutral-0);
+}
+
+.shophive-website .container-2 {
+  width: 1120px;
+  align-items: flex-start;
+  gap: 36px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.shophive-website .section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.shophive-website .text-wrapper-16 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--colors-primary-600);
+  font-size: 13px;
+  letter-spacing: 1.04px;
+  line-height: normal;
+}
+
+.shophive-website .text-wrapper-17 {
+  position: relative;
+  width: 760px;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: var(--colors-neutral-900);
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: -0.76px;
+  line-height: 43.7px;
+}
+
+.shophive-website .text-wrapper-18 {
+  position: relative;
+  width: 620px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--colors-neutral-500);
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 25.5px;
+}
+
+.shophive-website .category-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 14px 14px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.shophive-website .div-2 {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 22px 12px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  background-color: var(--colors-neutral-0);
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--colors-neutral-200);
+}
+
+.shophive-website .icon-tag-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 52px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: -2px;
+  background-color: var(--colors-primary-100);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.shophive-website .div-3 {
+  position: relative;
+  width: 26px;
+  height: 26px;
+}
+
+.shophive-website .vector-3 {
+  position: absolute;
+  width: 95.51%;
+  height: 95.51%;
+  top: 4.49%;
+  left: 4.49%;
+}
+
+.shophive-website .vector-4 {
+  position: absolute;
+  width: 74.68%;
+  height: 74.68%;
+  top: 25.32%;
+  left: 25.32%;
+}
+
+.shophive-website .text-wrapper-19 {
+  position: relative;
+  width: fit-content;
+  margin-bottom: -1px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--colors-neutral-900);
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.shophive-website .frame-13 {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  margin-top: -2px;
+}
+
+.shophive-website .icon-heart-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 52px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: -2px;
+  background-color: #fee2e2;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.shophive-website .vector-5 {
+  position: absolute;
+  width: 95.51%;
+  height: 91.35%;
+  top: 8.65%;
+  left: 4.49%;
+}
+
+.shophive-website .icon-store-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 52px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: -2px;
+  background-color: var(--colors-accent-100);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.shophive-website .vector-6 {
+  position: absolute;
+  width: 91.35%;
+  height: 87.18%;
+  top: 12.82%;
+  left: 8.65%;
+}
+
+.shophive-website .vector-7 {
+  position: absolute;
+  width: 87.18%;
+  height: 66.35%;
+  top: 33.65%;
+  left: 12.82%;
+}
+
+.shophive-website .vector-8 {
+  position: absolute;
+  width: 66.35%;
+  height: 45.51%;
+  top: 54.49%;
+  left: 33.65%;
+}
+
+.shophive-website .container-wrapper-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 72px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--colors-neutral-50);
+}
+
+.shophive-website .container-3 {
+  width: 1120px;
+  align-items: flex-start;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.shophive-website .div-4 {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.shophive-website .div-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 26px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  background-color: var(--colors-neutral-0);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--colors-neutral-200);
+}
+
+.shophive-website .frame-14 {
+  display: flex;
+  flex-direction: column;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: var(--colors-primary-100);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.shophive-website .div-6 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.shophive-website .vector-9 {
+  position: absolute;
+  width: 87.50%;
+  height: 95.84%;
+  top: 4.16%;
+  left: 12.50%;
+}
+
+.shophive-website .vector-10 {
+  position: absolute;
+  width: 66.67%;
+  height: 62.50%;
+  top: 37.50%;
+  left: 33.33%;
+}
+
+.shophive-website .spacer {
+  position: relative;
+  width: 1px;
+  height: 6px;
+}
+
+.shophive-website .text-wrapper-20 {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--colors-neutral-900);
+  font-size: 19px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.shophive-website .text-wrapper-21 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--colors-neutral-500);
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 22.5px;
+}
+
+.shophive-website .frame-15 {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.shophive-website .vector-11 {
+  position: absolute;
+  width: 91.67%;
+  height: 87.50%;
+  top: 12.50%;
+  left: 8.33%;
+}
+
+.shophive-website .vector-12 {
+  position: absolute;
+  width: 87.50%;
+  height: 66.67%;
+  top: 33.33%;
+  left: 12.50%;
+}
+
+.shophive-website .vector-13 {
+  position: absolute;
+  width: 66.67%;
+  height: 45.83%;
+  top: 54.17%;
+  left: 33.33%;
+}
+
+.shophive-website .frame-16 {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: var(--colors-primary-600);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.shophive-website .text-wrapper-22 {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--colors-neutral-0);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.shophive-website .text-wrapper-23 {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--colors-neutral-900);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.shophive-website .products {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 18px 18px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.shophive-website .div-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 14px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  background-color: var(--colors-neutral-0);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--colors-neutral-200);
+}
+
+.shophive-website .frame-17 {
+  display: flex;
+  flex-direction: column;
+  height: 140px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: var(--colors-neutral-100);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.shophive-website .image-5 {
+  position: relative;
+  width: 236px;
+  height: 140px;
+  aspect-ratio: 1.5;
+  object-fit: cover;
+}
+
+.shophive-website .frame-18 {
+  display: inline-flex;
+  align-items: flex-start;
+  padding: 2px 8px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--colors-error-600);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.shophive-website .text-wrapper-24 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--colors-neutral-0);
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.shophive-website .spacer-2 {
+  position: relative;
+  width: 1px;
+  height: 4px;
+}
+
+.shophive-website .text-wrapper-25 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--colors-neutral-900);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.shophive-website .text-wrapper-26 {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--colors-neutral-500);
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.shophive-website .frame-19 {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.shophive-website .text-wrapper-27 {
+  margin-top: -1px;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: var(--colors-neutral-900);
+  font-size: 18px;
+  position: relative;
+  width: fit-content;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.shophive-website .text-wrapper-28 {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--colors-neutral-500);
+  font-size: 13px;
+  text-decoration: line-through;
+  position: relative;
+  width: fit-content;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.shophive-website .image-6 {
+  position: relative;
+  width: 235px;
+  height: 140px;
+  aspect-ratio: 1.5;
+  object-fit: cover;
+}
+
+.shophive-website .image-7 {
+  position: relative;
+  width: 89px;
+  height: 140px;
+  aspect-ratio: 0.58;
+}
+
+.shophive-website .image-8 {
+  position: relative;
+  width: 102px;
+  height: 101px;
+  aspect-ratio: 1.02;
+  object-fit: cover;
+}
+
+.shophive-website .sell-band {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 48px 36px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--colors-primary-600);
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.shophive-website .frame-20 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.shophive-website .text-wrapper-29 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: var(--colors-neutral-0);
+  font-size: 38px;
+  letter-spacing: -0.76px;
+  line-height: normal;
+}
+
+.shophive-website .text-wrapper-30 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--colors-primary-100);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.shophive-website .button-become-a-2 {
+  display: inline-flex;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 22px;
+  position: relative;
+  background-color: var(--colors-neutral-0);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.shophive-website .text-wrapper-31 {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--colors-primary-600);
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.shophive-website .frame-21 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.shophive-website .vector-wrapper {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.shophive-website .vector-14 {
+  position: absolute;
+  width: 88.33%;
+  height: 80.00%;
+  top: 20.00%;
+  left: 11.67%;
+}
+
+.shophive-website .text-wrapper-32 {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: var(--colors-neutral-0);
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.shophive-website .container-4 {
+  width: 560px;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.shophive-website .text-wrapper-33 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: var(--colors-neutral-900);
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: -0.76px;
+  line-height: 43.7px;
+}
+
+.shophive-website .text-wrapper-34 {
+  align-self: stretch;
+  font-size: 17px;
+  text-align: center;
+  line-height: 25.5px;
+  position: relative;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--colors-neutral-500);
+  letter-spacing: 0;
+}
+
+.shophive-website .form {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.shophive-website .email-input {
+  display: flex;
+  height: 52px;
+  align-items: center;
+  padding: 0px 16px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  background-color: var(--colors-neutral-0);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1.5px solid;
+  border-color: var(--colors-neutral-200);
+}
+
+.shophive-website .text-wrapper-35 {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--colors-neutral-500);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.shophive-website .button-join-the-2 {
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 22px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--colors-primary-600);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.shophive-website .text-wrapper-36 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--colors-neutral-500);
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.shophive-website .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px 48px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--white);
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-color: var(--colors-neutral-200);
+}
+
+.shophive-website .container-5 {
+  width: 1120px;
+  align-items: flex-start;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.shophive-website .frame-22 {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.shophive-website .frame-23 {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  align-items: flex-start;
+  gap: 12px;
+  position: relative;
+}
+
+.shophive-website .text-wrapper-37 {
+  position: relative;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--colors-neutral-500);
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.shophive-website .frame-24 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.shophive-website .text-wrapper-38 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--colors-neutral-900);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.shophive-website .text-wrapper-39 {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--colors-neutral-500);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}

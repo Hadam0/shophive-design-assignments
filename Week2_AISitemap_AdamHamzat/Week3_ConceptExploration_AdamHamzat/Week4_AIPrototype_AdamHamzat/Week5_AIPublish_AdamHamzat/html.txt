@@ -1,0 +1,168 @@
+
+    <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="globals.css">
+<link rel="stylesheet" href="styleguide.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shophive-website" ><div class="frame" ><div class="header-wrapper" ><header class="header" ><div class="container" ><div class="header-row" ><div class="div" ><img class="logo-mark" src="img/logo-mark-2.svg" />
+<div class="text-wrapper" >ShopHive</div></div>
+<div class="nav" ><div class="text-wrapper-2" >Shop</div>
+<div class="text-wrapper-2" >Why ShopHive</div>
+<div class="text-wrapper-2" >How it works</div>
+<div class="text-wrapper-2" >Sell</div>
+<div class="button-join-the" ><div class="text-wrapper-3" >Join the waitlist</div></div></div></div></div></header></div>
+<div class="hero" ><div class="hero-row-wrapper" ><div class="hero-row" ><div class="hero-text" ><div class="made-for-nigerian-wrapper" ><p class="made-for-nigerian" >Made for Nigerian buyers &amp; sellers</p></div>
+<p class="shop-trusted-sellers" ><span class="span" >Shop trusted sellers, </span>
+<span class="text-wrapper-4" >anywhere</span>
+<span class="span" > in Nigeria.</span></p>
+<p class="p" >ShopHive brings thousands of verified sellers into one app. Pay securely, track every order, and return items with confidence.</p>
+<div class="CTA" ><div class="div-wrapper" ><div class="text-wrapper-3" >Join the waitlist</div></div>
+<div class="button-become-a" ><div class="text-wrapper-5" >Become a seller</div></div></div>
+<div class="trust" ><div class="frame-2" ><div class="icon-check" ><img class="vector" src="img/vector-6.svg" /></div>
+<div class="text-wrapper-6" >Secure payments</div></div>
+<div class="frame-2" ><div class="icon-check" ><img class="vector" src="img/vector-7.svg" /></div>
+<div class="text-wrapper-6" >Verified sellers</div></div>
+<div class="frame-2" ><div class="icon-check" ><img class="vector" src="img/vector-9.svg" /></div>
+<div class="text-wrapper-6" >Tracked delivery</div></div></div></div>
+<div class="phone-stage" ><div class="group" ><div class="ellipse" ></div>
+<div class="phone-mock" ><div class="frame-3" ><div class="text-wrapper-7" >9:41</div>
+<div class="text-wrapper-8" >Ikeja, Lagos</div></div>
+<div class="frame-4" ><div class="icon-search" ><img class="img" src="img/vector-18.svg" />
+<img class="vector-2" src="img/vector-11.svg" /></div>
+<div class="text-wrapper-9" >Search products, sellers</div></div>
+<div class="frame-5" ><div class="frame-6" ><div class="text-wrapper-10" >All</div></div>
+<div class="frame-7" ><div class="text-wrapper-11" >Phones</div></div>
+<div class="frame-7" ><div class="text-wrapper-11" >Fashion</div></div>
+<div class="frame-7" ><div class="text-wrapper-11" >Home</div></div></div>
+<div class="frame-8" ><div class="text-wrapper-12" >Flash sale</div>
+<div class="text-wrapper-12" >Ends 02:14:09</div></div>
+<div class="frame-9" ><div class="frame-10" ><div class="frame-11" ><div class="image-wrapper" ><img class="image" src="img/image-1.png" /></div>
+<div class="text-wrapper-13" >Air Max Sneakers</div>
+<div class="text-wrapper-14" >₦45,000</div>
+<div class="frame-12" ><div class="text-wrapper-15" >Add to cart</div></div></div>
+<div class="frame-11" ><div class="image-wrapper" ><img class="image-2" src="img/image-2-2.png" /></div>
+<div class="text-wrapper-13" >Galaxy A15</div>
+<div class="text-wrapper-14" >₦185,000</div>
+<div class="frame-12" ><div class="text-wrapper-15" >Add to cart</div></div></div></div>
+<div class="frame-10" ><div class="frame-11" ><div class="image-wrapper" ><img class="image-3" src="img/image-3-2.png" /></div>
+<div class="text-wrapper-13" >Ankara Dress</div>
+<div class="text-wrapper-14" >₦18,500</div>
+<div class="frame-12" ><div class="text-wrapper-15" >Add to cart</div></div></div>
+<div class="frame-11" ><div class="image-wrapper" ><img class="image-4" src="img/image-4.png" /></div>
+<div class="text-wrapper-13" >Earbuds Pro</div>
+<div class="text-wrapper-14" >₦12,900</div>
+<div class="frame-12" ><div class="text-wrapper-15" >Add to cart</div></div></div></div></div></div></div></div></div></div></div></div>
+<div class="container-wrapper" ><div class="container-2" ><div class="section-header" ><div class="text-wrapper-16" >SHOP BY CATEGORY</div>
+<p class="text-wrapper-17" >Everything you need, all in one place</p>
+<p class="text-wrapper-18" >From fashion to electronics, find what you love from sellers you can trust.</p></div>
+<div class="category-cards" ><div class="div-2" ><div class="icon-tag-wrapper" ><div class="div-3" ><img class="vector-3" src="img/vector-10.svg" />
+<img class="vector-4" src="img/vector-5.svg" /></div></div>
+<div class="text-wrapper-19" >Fashion</div></div>
+<div class="div-2" ><img class="frame-13" src="img/frame.svg" />
+<div class="text-wrapper-19" >Electronics</div></div>
+<div class="div-2" ><div class="icon-heart-wrapper" ><div class="div-3" ><img class="vector-5" src="img/vector-3.svg" /></div></div>
+<div class="text-wrapper-19" >Beauty</div></div>
+<div class="div-2" ><div class="icon-store-wrapper" ><div class="div-3" ><img class="vector-6" src="img/vector-8.svg" />
+<img class="vector-7" src="img/vector-12.svg" />
+<img class="vector-8" src="img/vector-13.svg" /></div></div>
+<div class="text-wrapper-19" >Home &amp; Living</div></div>
+<div class="div-2" ><img class="frame-13" src="img/frame-3.svg" />
+<div class="text-wrapper-19" >Groceries</div></div></div></div></div>
+<div class="container-wrapper-2" ><div class="container-3" ><div class="section-header" ><div class="text-wrapper-16" >WHY SHOPHIVE</div>
+<p class="text-wrapper-17" >Shopping you can trust from the first tap</p>
+<p class="text-wrapper-18" >We designed every step around the things Nigerian shoppers worry about most.</p></div>
+<div class="div-4" ><div class="div-5" ><div class="frame-14" ><div class="div-6" ><img class="vector-9" src="img/vector-4.svg" />
+<img class="vector-10" src="img/vector-2.svg" /></div></div>
+<div class="spacer" ></div>
+<div class="text-wrapper-20" >Secure payments</div>
+<p class="text-wrapper-21" >Pay by card, bank transfer or USSD. Your money is held until your order arrives.</p></div>
+<div class="div-5" ><img class="frame-15" src="img/frame-4.svg" />
+<div class="spacer" ></div>
+<div class="text-wrapper-20" >Tracked delivery</div>
+<p class="text-wrapper-21" >Follow your package from the seller to your door with clear status updates.</p></div>
+<div class="div-5" ><div class="frame-14" ><div class="div-6" ><img class="vector-11" src="img/vector-15.svg" />
+<img class="vector-12" src="img/vector.svg" />
+<img class="vector-13" src="img/vector-14.svg" /></div></div>
+<div class="spacer" ></div>
+<div class="text-wrapper-20" >Verified sellers</div>
+<p class="text-wrapper-21" >Every seller is checked before they can list, so you can shop with confidence.</p></div>
+<div class="div-5" ><img class="frame-15" src="img/frame-2.svg" />
+<div class="spacer" ></div>
+<div class="text-wrapper-20" >Easy returns</div>
+<p class="text-wrapper-21" >Something not right? Request a return in the app and get a fast refund.</p></div></div></div></div>
+<div class="container-wrapper" ><div class="container-2" ><div class="section-header" ><div class="text-wrapper-16" >HOW IT WORKS</div>
+<p class="text-wrapper-17" >From search to doorstep in three steps</p></div>
+<div class="div-4" ><div class="div-5" ><div class="frame-16" ><div class="text-wrapper-22" >1</div></div>
+<div class="spacer" ></div>
+<div class="text-wrapper-23" >Find what you want</div>
+<p class="text-wrapper-21" >Search or browse categories, filter by price, and sort by rating.</p></div>
+<div class="div-5" ><div class="frame-16" ><div class="text-wrapper-22" >2</div></div>
+<div class="spacer" ></div>
+<div class="text-wrapper-23" >Pay securely</div>
+<p class="text-wrapper-21" >Check out in seconds and see the full total, including delivery, before you pay.</p></div>
+<div class="div-5" ><div class="frame-16" ><div class="text-wrapper-22" >3</div></div>
+<div class="spacer" ></div>
+<div class="text-wrapper-23" >Track and enjoy</div>
+<p class="text-wrapper-21" >Follow your order live, then rate your purchase when it arrives.</p></div></div></div></div>
+<div class="container-wrapper-2" ><div class="container-2" ><div class="section-header" ><div class="text-wrapper-16" >POPULAR RIGHT NOW</div>
+<div class="text-wrapper-17" >Deals shoppers are loving</div>
+<p class="text-wrapper-18" >A preview of what you will find on ShopHive.</p></div>
+<div class="products" ><div class="div-7" ><div class="frame-17" ><img class="image-5" src="img/image.png" />
+<div class="frame-18" ><div class="text-wrapper-24" >-25%</div></div></div>
+<div class="spacer-2" ></div>
+<div class="text-wrapper-25" >Nike Air Max Sneakers</div>
+<div class="text-wrapper-26" >SoleHub Lagos</div>
+<div class="frame-19" ><div class="text-wrapper-27" >₦45,000</div>
+<div class="text-wrapper-28" >₦60,000</div></div></div>
+<div class="div-7" ><div class="frame-17" ><img class="image-6" src="img/image-2.png" /></div>
+<div class="spacer-2" ></div>
+<div class="text-wrapper-25" >Samsung Galaxy A15</div>
+<div class="text-wrapper-26" >TechVille</div>
+<div class="frame-19" ><div class="text-wrapper-27" >₦185,000</div></div></div>
+<div class="div-7" ><div class="frame-17" ><img class="image-7" src="img/image-3.png" /></div>
+<div class="spacer-2" ></div>
+<div class="text-wrapper-25" >Ankara Print Dress</div>
+<div class="text-wrapper-26" >Zaria Styles</div>
+<div class="frame-19" ><div class="text-wrapper-27" >₦18,500</div></div></div>
+<div class="div-7" ><div class="frame-17" ><img class="image-8" src="img/image-4-2.png" />
+<div class="frame-18" ><div class="text-wrapper-24" >-19%</div></div></div>
+<div class="spacer-2" ></div>
+<div class="text-wrapper-25" >Wireless Earbuds Pro</div>
+<div class="text-wrapper-26" >GadgetPoint</div>
+<div class="frame-19" ><div class="text-wrapper-27" >₦12,900</div>
+<div class="text-wrapper-28" >₦16,000</div></div></div></div></div></div>
+<div class="container-wrapper" ><div class="container" ><div class="sell-band" ><div class="frame-20" ><div class="text-wrapper-29" >Sell on ShopHive</div>
+<p class="text-wrapper-30" >Open your store in minutes, reach buyers across Nigeria, and get paid straight to your bank account after every delivered order.</p>
+<div class="spacer" ></div>
+<div class="button-become-a-2" ><div class="text-wrapper-31" >Become a seller</div></div></div>
+<div class="frame-21" ><div class="div" ><div class="vector-wrapper" ><img class="vector-14" src="img/vector-17.svg" /></div>
+<div class="text-wrapper-32" >No monthly fees</div></div>
+<div class="div" ><div class="vector-wrapper" ><img class="vector-14" src="img/image.svg" /></div>
+<p class="text-wrapper-32" >Easy order and stock management</p></div>
+<div class="div" ><div class="vector-wrapper" ><img class="vector-14" src="img/vector-16.svg" /></div>
+<div class="text-wrapper-32" >Secure, reliable payouts</div></div></div></div></div></div>
+<div class="container-wrapper-2" ><div class="container-4" ><div class="text-wrapper-16" >GET EARLY ACCESS</div>
+<p class="text-wrapper-33" >Be first to shop on ShopHive</p>
+<p class="text-wrapper-34" >Join the waitlist and we will let you know the moment we launch.</p>
+<div class="spacer" ></div>
+<div class="form" ><div class="email-input" ><div class="text-wrapper-35" >Enter your email address</div></div>
+<div class="button-join-the-2" ><div class="text-wrapper-3" >Join the waitlist</div></div></div>
+<p class="text-wrapper-36" >Course project demo: sign-ups are not stored or sent anywhere.</p></div></div>
+<footer class="footer" ><div class="container-5" ><div class="frame-22" ><div class="frame-23" ><div class="div" ><img class="logo-mark" src="img/logo-mark.svg" />
+<div class="text-wrapper" >ShopHive</div></div>
+<p class="text-wrapper-37" >Shop trusted sellers anywhere. A multi-vendor marketplace app concept designed in Figma.</p></div>
+<div class="frame-24" ><div class="text-wrapper-38" >Explore</div>
+<div class="text-wrapper-39" >Shop</div>
+<div class="text-wrapper-39" >Why ShopHive</div>
+<div class="text-wrapper-39" >How it works</div></div>
+<div class="frame-24" ><div class="text-wrapper-38" >Company</div>
+<div class="text-wrapper-39" >Sell with us</div>
+<div class="text-wrapper-39" >Join the waitlist</div></div></div>
+<p class="text-wrapper-26" >© 2026 ShopHive. Designed by Adam Hamzat.</p></div></footer></div>
+</body>
+</html>
