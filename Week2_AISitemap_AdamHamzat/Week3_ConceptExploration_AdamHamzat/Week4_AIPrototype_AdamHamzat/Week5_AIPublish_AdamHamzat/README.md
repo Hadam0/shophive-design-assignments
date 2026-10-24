@@ -4,7 +4,7 @@
 **Project:** ShopHive, a multi-vendor marketplace app (marketing website)
 
 ## Live URL
-YOUR LIVE LINK HERE
+https://shophivemarketplace.netlify.app
 
 ## Figma design
 (https://www.figma.com/design/UwaeIAxZWKL9vcxBfsEGLA/FLEXISAF?node-id=2155-3341&t=usUA7UjemerPZRwy-1)
