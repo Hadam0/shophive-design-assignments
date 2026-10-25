@@ -3,11 +3,11 @@
 A working sign-up flow for the ShopHive marketplace app, built from my Figma design.
 
 **Name:** Adam Hamzat
-**Live URL:** YOUR LIVE LINK HERE
-**Figma design:** https://www.figma.com/design/UwaeIAxZWKL9vcxBfsEGLA/FLEXISAF (page: Page 5)
+**Live URL:** https://dynamic-cucurucho-aad420.netlify.app/
+**Figma design:** https://www.figma.com/design/UwaeIAxZWKL9vcxBfsEGLA/FLEXISAF?node-id=2218-825&t=RZmOyaFlZJniLnDE-1
 
 ## Tool used
-Claude (AI assistant by Anthropic) generated the app code from my Figma design. I did not use Lovable. Authentication and the database use Supabase.
+Claude AI. Authentication and the database use Supabase.
 
 ## What it does
 1. Splash and Welcome screens, matching the Figma design
