@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ShopHive – Create your account</title>
+<meta name="description" content="ShopHive sign-up flow: create an account, set your delivery location and pick your interests.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+:root{
+  --bg:#EEF1F4; --surface:#FFFFFF; --text:#111827; --muted:#6B7280; --border:#D1D5DB; --chip:#F3F4F6;
+  --primary:#0B6E4F; --on-primary:#FFFFFF; --primary-soft:#DDF3E8; --danger:#DC2626; --warn:#D97706; --ok:#16A34A;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#060B14; --surface:#0F172A; --text:#F3F4F6; --muted:#9CA3AF; --border:#334155; --chip:#1E293B;
+    --primary:#34D399; --on-primary:#052E2B; --primary-soft:#064E3B;
+  }
+}
+:root[data-theme="dark"]{--bg:#060B14;--surface:#0F172A;--text:#F3F4F6;--muted:#9CA3AF;--border:#334155;--chip:#1E293B;--primary:#34D399;--on-primary:#052E2B;--primary-soft:#064E3B}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none}
+:focus-visible{outline:3px solid var(--primary);outline-offset:2px;border-radius:8px}
+.app{max-width:430px;height:100%;margin:0 auto;background:var(--surface);display:flex;flex-direction:column;position:relative;overflow:hidden}
+@media (min-width:520px){body{padding:24px 0}.app{height:min(860px,calc(100vh - 48px));border-radius:32px;border:1px solid var(--border);box-shadow:0 20px 60px rgba(0,0,0,.18)}}
+.banner{background:#FEF1D6;color:#92400E;font-size:12px;padding:8px 16px;text-align:center;font-weight:500}
+.banner[hidden]{display:none}
+.screen{flex:1;display:flex;flex-direction:column;padding:20px 24px 28px;overflow-y:auto;animation:in .3s ease both}
+.screen[hidden]{display:none}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.splash{background:var(--primary);color:var(--on-primary);align-items:center;justify-content:center;gap:14px;text-align:center}
+.splash .brand{font-size:28px;font-weight:800;letter-spacing:-.02em}
+.splash p{margin:0;opacity:.85;font-size:14px}
+.back{width:40px;height:40px;border-radius:50%;background:var(--chip);display:grid;place-items:center;margin-bottom:18px;flex:none}
+h1{font-size:26px;line-height:1.2;margin:0 0 8px;letter-spacing:-.02em}
+.lead{color:var(--muted);font-size:14px;margin:0 0 20px;line-height:1.5}
+.field{margin-bottom:14px}
+label{display:block;font-size:14px;font-weight:500;margin-bottom:6px;color:var(--text)}
+input[type=text],input[type=email],input[type=password],select{width:100%;height:52px;border:1.5px solid var(--border);border-radius:12px;padding:0 16px;background:var(--surface);font-size:16px}
+input:focus,select:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-soft)}
+input[aria-invalid="true"],select[aria-invalid="true"]{border-color:var(--danger)}
+.pw{position:relative}.pw input{padding-right:64px}
+.pw .tg{position:absolute;right:6px;top:6px;height:40px;padding:0 12px;font-size:13px;font-weight:600;color:var(--primary);border-radius:8px}
+.err{color:var(--danger);font-size:12.5px;min-height:0;margin-top:4px}
+.err:empty{display:none}
+.meter{display:flex;gap:4px;margin-top:8px}
+.meter i{flex:1;height:4px;border-radius:2px;background:var(--border);transition:background .2s}
+.meter-l{font-size:12px;color:var(--muted);margin-top:4px;min-height:16px}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--muted);margin:4px 0 14px}
+.check input{width:20px;height:20px;margin:1px 0 0;accent-color:var(--primary);flex:none}
+.formerr{background:#FEE2E2;color:#991B1B;border-radius:12px;padding:10px 14px;font-size:13px;margin-bottom:14px}
+.formerr:empty{display:none}
+.formok{background:var(--primary-soft);color:var(--primary);border-radius:12px;padding:10px 14px;font-size:13px;margin-bottom:14px;font-weight:500}
+.formok:empty{display:none}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;height:52px;border-radius:12px;font-weight:600;font-size:16px;transition:transform .15s,opacity .2s;margin-top:4px}
+.btn:active{transform:scale(.98)}
+.btn.primary{background:var(--primary);color:var(--on-primary)}
+.btn.outline{border:1.5px solid var(--border);background:var(--surface)}
+.btn[disabled]{opacity:.6;cursor:not-allowed}
+.btn.light{background:var(--surface);color:var(--primary)}
+.spin{width:18px;height:18px;border-radius:50%;border:2.5px solid currentColor;border-right-color:transparent;animation:r .7s linear infinite}
+@keyframes r{to{transform:rotate(360deg)}}
+.divider{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:12px;margin:12px 0}
+.divider::before,.divider::after{content:"";flex:1;height:1px;background:var(--border)}
+.foot{margin-top:auto;padding-top:18px;text-align:center;font-size:14px;color:var(--muted)}
+.link{color:var(--primary);font-weight:600}
+.row-r{display:flex;justify-content:flex-end;margin:-4px 0 6px}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:22px}
+.tile{height:128px;border-radius:20px;display:grid;place-items:center}
+.t1{background:#DDF3E8}.t2{background:#FEF1D6}.t3{background:#DBEAFE}.t4{background:#DCFCE7}
+.tile svg{stroke:#0B6E4F}
+.spacer{flex:1}
+.ill{width:200px;height:200px;border-radius:50%;background:var(--primary-soft);display:grid;place-items:center;margin:8px auto 22px}
+.ill div{width:120px;height:120px;border-radius:50%;background:var(--chip);display:grid;place-items:center}
+.ill svg{stroke:var(--primary)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.chip{padding:10px 16px;border-radius:999px;background:var(--chip);font-size:14px;font-weight:500;transition:background .15s,color .15s}
+.chip[aria-pressed="true"]{background:var(--primary);color:var(--on-primary)}
+.tick{width:84px;height:84px;border-radius:50%;background:var(--primary);color:var(--on-primary);display:grid;place-items:center;margin:8px auto 16px;animation:grow .5s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes grow{from{transform:scale(0)}to{transform:scale(1)}}
+.center{text-align:center}
+.card{border:1px solid var(--border);border-radius:16px;padding:6px 16px;margin:6px 0 18px}
+.kv{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--border);font-size:14px}
+.kv:last-child{border:0}.kv span:first-child{color:var(--muted)}.kv span:last-child{font-weight:600;text-align:right}
+.src{font-size:12px;color:var(--muted);text-align:center;margin-bottom:10px}
+.toast{position:absolute;left:50%;bottom:28px;transform:translate(-50%,20px);background:#111827;color:#fff;border-radius:999px;padding:10px 18px;font-size:13px;opacity:0;pointer-events:none;transition:.25s;max-width:90%;text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="app" id="app">
+  <div class="banner" id="banner" hidden>Demo mode: accounts are saved in this browser only. Add Supabase keys to use a real database.</div>
+
+  <!-- Splash -->
+  <section class="screen splash" id="s-splash">
+    <svg width="96" height="96" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2l12 7v14l-12 7L4 23V9z" fill="#fff"/><g stroke="#0B6E4F" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(7.6 7.6) scale(.7)"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></g></svg>
+    <div class="brand">ShopHive</div>
+    <p>Shop trusted sellers anywhere</p>
+  </section>
+
+  <!-- Welcome -->
+  <section class="screen" id="s-welcome" hidden>
+    <div class="tiles" aria-hidden="true">
+      <div class="tile t1"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></div>
+      <div class="tile t2"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5"/></svg></div>
+      <div class="tile t3"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18l-1.5-5h-15z"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/></svg></div>
+      <div class="tile t4"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg></div>
+    </div>
+    <h1>Everything you need, all in one place.</h1>
+    <p class="lead">Discover products from trusted sellers and shop conveniently from anywhere.</p>
+    <div class="spacer"></div>
+    <button class="btn primary" data-go="signup">Get Started</button>
+    <button class="btn outline" data-go="login">Log In</button>
+    <p class="foot" style="margin-top:6px;padding-top:6px"><button class="link" id="guest">Continue as guest</button></p>
+  </section>
+
+  <!-- Sign up -->
+  <section class="screen" id="s-signup" hidden>
+    <button class="back" data-go="welcome" aria-label="Back"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+    <h1>Create account</h1>
+    <p class="lead">Sign up to start shopping and selling.</p>
+    <form id="f-signup" novalidate>
+      <div class="formerr" id="su-form-e" role="alert"></div>
+      <div class="field"><label for="su-name">Full name</label><input id="su-name" type="text" autocomplete="name" placeholder="Adam Hamzat" aria-describedby="su-name-e"><div class="err" id="su-name-e"></div></div>
+      <div class="field"><label for="su-email">Email address</label><input id="su-email" type="email" autocomplete="email" placeholder="you@example.com" aria-describedby="su-email-e"><div class="err" id="su-email-e"></div></div>
+      <div class="field"><label for="su-pw">Password</label>
+        <div class="pw"><input id="su-pw" type="password" autocomplete="new-password" placeholder="At least 8 characters" aria-describedby="su-pw-e su-meter-l"><button type="button" class="tg" data-toggle="su-pw" aria-label="Show password">Show</button></div>
+        <div class="meter" aria-hidden="true"><i></i><i></i><i></i><i></i></div><div class="meter-l" id="su-meter-l"></div>
+        <div class="err" id="su-pw-e"></div></div>
+      <label class="check" for="su-terms"><input id="su-terms" type="checkbox"><span>I agree to the Terms &amp; Privacy Policy</span></label>
+      <div class="err" id="su-terms-e" style="margin:-8px 0 10px"></div>
+      <button class="btn primary" type="submit" id="su-btn">Create Account</button>
+    </form>
+    <div class="divider">or</div>
+    <button class="btn outline" type="button" disabled title="Not available in this version">Continue with Google (coming soon)</button>
+    <p class="foot">Already have an account? <button class="link" data-go="login">Log in</button></p>
+  </section>
+
+  <!-- Login -->
+  <section class="screen" id="s-login" hidden>
+    <button class="back" data-go="welcome" aria-label="Back"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+    <h1>Welcome back</h1>
+    <p class="lead">Log in to continue shopping.</p>
+    <form id="f-login" novalidate>
+      <div class="formok" id="li-ok" role="status"></div>
+      <div class="formerr" id="li-form-e" role="alert"></div>
+      <div class="field"><label for="li-email">Email address</label><input id="li-email" type="email" autocomplete="email" placeholder="you@example.com" aria-describedby="li-email-e"><div class="err" id="li-email-e"></div></div>
+      <div class="field"><label for="li-pw">Password</label>
+        <div class="pw"><input id="li-pw" type="password" autocomplete="current-password" placeholder="Enter your password" aria-describedby="li-pw-e"><button type="button" class="tg" data-toggle="li-pw" aria-label="Show password">Show</button></div>
+        <div class="err" id="li-pw-e"></div></div>
+      <div class="row-r"><button type="button" class="link" data-go="forgot" style="font-size:14px">Forgot password?</button></div>
+      <button class="btn primary" type="submit" id="li-btn">Log In</button>
+    </form>
+    <p class="foot">Don't have an account? <button class="link" data-go="signup">Sign up</button></p>
+  </section>
+
+  <!-- Forgot -->
+  <section class="screen" id="s-forgot" hidden>
+    <button class="back" data-go="login" aria-label="Back"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+    <h1>Forgot password?</h1>
+    <p class="lead">Enter your email and we'll send you a reset link.</p>
+    <form id="f-forgot" novalidate>
+      <div class="formok" id="fg-ok" role="status"></div>
+      <div class="formerr" id="fg-form-e" role="alert"></div>
+      <div class="field"><label for="fg-email">Email address</label><input id="fg-email" type="email" autocomplete="email" placeholder="you@example.com" aria-describedby="fg-email-e"><div class="err" id="fg-email-e"></div></div>
+      <button class="btn primary" type="submit" id="fg-btn">Send Reset Link</button>
+    </form>
+    <p class="foot"><button class="link" data-go="login">Back to login</button></p>
+  </section>
+
+  <!-- Reset (after email link) -->
+  <section class="screen" id="s-reset" hidden>
+    <h1>Set a new password</h1>
+    <p class="lead">Choose a new password for your account.</p>
+    <form id="f-reset" novalidate>
+      <div class="formerr" id="rs-form-e" role="alert"></div>
+      <div class="field"><label for="rs-pw">New password</label><div class="pw"><input id="rs-pw" type="password" autocomplete="new-password" placeholder="At least 8 characters" aria-describedby="rs-pw-e"><button type="button" class="tg" data-toggle="rs-pw" aria-label="Show password">Show</button></div><div class="err" id="rs-pw-e"></div></div>
+      <button class="btn primary" type="submit" id="rs-btn">Save password</button>
+    </form>
+  </section>
+
+  <!-- Location -->
+  <section class="screen" id="s-location" hidden>
+    <div class="ill" aria-hidden="true"><div><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div></div>
+    <h1 class="center">Set your delivery location</h1>
+    <p class="lead center">We use your location to show products, delivery fees and delivery times for your area.</p>
+    <form id="f-location" novalidate>
+      <div class="field"><label for="lo-state">State</label><select id="lo-state" aria-describedby="lo-state-e"><option value="">Select state</option></select><div class="err" id="lo-state-e"></div></div>
+      <div class="field"><label for="lo-city">City / area</label><input id="lo-city" type="text" placeholder="e.g. Ikeja" autocomplete="address-level2"></div>
+      <div class="formerr" id="lo-form-e" role="alert"></div>
+      <button class="btn primary" type="submit" id="lo-btn">Save &amp; continue</button>
+    </form>
+    <button class="btn outline" id="lo-skip" type="button">Skip for now</button>
+  </section>
+
+  <!-- Interests -->
+  <section class="screen" id="s-interests" hidden>
+    <h1>What are you into?</h1>
+    <p class="lead">Pick a few categories to personalise your home feed.</p>
+    <div class="chips" id="chips" role="group" aria-label="Interests"></div>
+    <div class="formerr" id="in-form-e" role="alert"></div>
+    <div class="spacer"></div>
+    <button class="btn primary" id="in-btn" type="button">Continue</button>
+    <button class="btn outline" id="in-skip" type="button">Skip</button>
+  </section>
+
+  <!-- Done -->
+  <section class="screen" id="s-done" hidden>
+    <div class="tick" aria-hidden="true"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+    <h1 class="center" id="done-title">Welcome to ShopHive!</h1>
+    <p class="lead center">Your account is ready. Here is what we saved for you.</p>
+    <div class="card" id="done-card" aria-live="polite"></div>
+    <div class="src" id="done-src"></div>
+    <div class="spacer"></div>
+    <button class="btn outline" id="logout">Log out</button>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+  /* ===== Configuration =====
+     To use a real database and real authentication, paste your Supabase project values here.
+     Leave both empty to run in demo mode (data stays in this browser). */
+  var CONFIG={SUPABASE_URL:'https://gakorpxqljrlhejqwhdg.supabase.co',SUPABASE_ANON_KEY:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imdha29ycHhxbGpybGhlanF3aGRnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI4Nzg4MjMsImV4cCI6MjEwODQ1NDgyM30.-Z-QAd1t26CYyWUNZFM0Qon-u1OiNW53gxtmcxa1G_c'};
+
+  var STATES=['Abia','Abuja (FCT)','Adamawa','Akwa Ibom','Anambra','Bauchi','Bayelsa','Benue','Borno','Cross River','Delta','Ebonyi','Edo','Ekiti','Enugu','Gombe','Imo','Jigawa','Kaduna','Kano','Katsina','Kebbi','Kogi','Kwara','Lagos','Nasarawa','Niger','Ogun','Ondo','Osun','Oyo','Plateau','Rivers','Sokoto','Taraba','Yobe','Zamfara'];
+  var INTERESTS=['Fashion','Electronics','Beauty','Home & Living','Sports','Groceries','Phones','Kids','Books','Automotive'];
+  var $=function(id){return document.getElementById(id);};
+  var state={user:null,profile:{},mode:'demo',picked:{}};
+  var api=null,sb=null;
+
+  /* ===== Safe storage (falls back to memory) ===== */
+  var mem={};
+  var store={
+    get:function(k){try{return window.localStorage.getItem(k);}catch(e){return mem[k]||null;}},
+    set:function(k,v){try{window.localStorage.setItem(k,v);}catch(e){mem[k]=v;}},
+    del:function(k){try{window.localStorage.removeItem(k);}catch(e){delete mem[k];}}
+  };
+
+  /* ===== UI helpers ===== */
+  function show(name){
+    document.querySelectorAll('.screen').forEach(function(s){s.hidden=(s.id!=='s-'+name);});
+    var el=$('s-'+name);if(el)el.scrollTop=0;
+    var h=el&&el.querySelector('h1,input,select');if(h&&name!=='splash'){try{ (el.querySelector('input,select')||h).focus({preventScroll:true}); }catch(e){}}
+  }
+  function toast(msg){var t=$('toast');t.textContent=msg;t.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(function(){t.classList.remove('show');},2400);}
+  function busy(btn,on,label){btn.disabled=on;btn.innerHTML=on?'<span class="spin" aria-hidden="true"></span>'+label:label;}
+  function setErr(id,msg,inputId){var e=$(id);if(e)e.textContent=msg||'';if(inputId){var i=$(inputId);if(i){if(msg)i.setAttribute('aria-invalid','true');else i.removeAttribute('aria-invalid');}}}
+  function clearForm(prefix,fields){fields.forEach(function(f){setErr(prefix+'-'+f+'-e','',prefix+'-'+f);});var fe=$(prefix+'-form-e');if(fe)fe.textContent='';}
+  var emailRe=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  function strength(pw){
+    var s=0;if(pw.length>=8)s++;if(/[a-z]/.test(pw)&&/[A-Z]/.test(pw))s++;if(/\d/.test(pw))s++;if(/[^A-Za-z0-9]/.test(pw)||pw.length>=12)s++;return s;
+  }
+  function friendly(err){
+    var m=(err&&err.message)||'Something went wrong. Please try again.';
+    if(/already registered|already exists/i.test(m))return 'An account with this email already exists. Try logging in instead.';
+    if(/invalid login|incorrect email/i.test(m))return 'Incorrect email or password.';
+    if(/not confirmed/i.test(m))return 'Please confirm your email first. Check your inbox for the confirmation link.';
+    if(/rate limit|too many/i.test(m))return 'Too many attempts. Please wait a moment and try again.';
+    if(/fetch|network/i.test(m))return 'Network problem. Check your connection and try again.';
+    return m;
+  }
+
+  /* ===== Pure-JS SHA-256 (used only if the browser has no Web Crypto, e.g. on plain http) ===== */
+  var SHA_K=[],SHA_H=[];(function(){var p=2,c=0;function isP(n){for(var i=2;i*i<=n;i++)if(n%i===0)return false;return true;}while(c<64){if(isP(p)){if(c<8)SHA_H[c]=(Math.pow(p,1/2)%1*4294967296)|0;SHA_K[c]=(Math.pow(p,1/3)%1*4294967296)|0;c++;}p++;}})();
+  function sha256Hex(str){
+    var rr=function(n,x){return (x>>>n)|(x<<(32-n));};
+    var bytes=Array.from(new TextEncoder().encode(str)),bits=bytes.length*8,i,t;
+    bytes.push(0x80);while(bytes.length%64!==56)bytes.push(0);
+    var hi=Math.floor(bits/4294967296),lo=bits>>>0;
+    [hi,lo].forEach(function(v){for(i=3;i>=0;i--)bytes.push((v>>>(i*8))&255);});
+    var h=SHA_H.slice();
+    for(var o=0;o<bytes.length;o+=64){
+      var w=[];for(t=0;t<16;t++)w[t]=(bytes[o+t*4]<<24)|(bytes[o+t*4+1]<<16)|(bytes[o+t*4+2]<<8)|bytes[o+t*4+3];
+      for(t=16;t<64;t++){var s0=rr(7,w[t-15])^rr(18,w[t-15])^(w[t-15]>>>3),s1=rr(17,w[t-2])^rr(19,w[t-2])^(w[t-2]>>>10);w[t]=(w[t-16]+s0+w[t-7]+s1)|0;}
+      var a=h[0],b=h[1],c=h[2],d=h[3],e=h[4],f=h[5],g=h[6],hh=h[7];
+      for(t=0;t<64;t++){var S1=rr(6,e)^rr(11,e)^rr(25,e),ch=(e&f)^(~e&g),t1=(hh+S1+ch+SHA_K[t]+w[t])|0,S0=rr(2,a)^rr(13,a)^rr(22,a),mj=(a&b)^(a&c)^(b&c),t2=(S0+mj)|0;hh=g;g=f;f=e;e=(d+t1)|0;d=c;c=b;b=a;a=(t1+t2)|0;}
+      h[0]=(h[0]+a)|0;h[1]=(h[1]+b)|0;h[2]=(h[2]+c)|0;h[3]=(h[3]+d)|0;h[4]=(h[4]+e)|0;h[5]=(h[5]+f)|0;h[6]=(h[6]+g)|0;h[7]=(h[7]+hh)|0;
+    }
+    return h.map(function(x){return (x>>>0).toString(16).padStart(8,'0');}).join('');
+  }
+
+  /* ===== Demo backend (browser only) ===== */
+  var demo={
+    hash:function(pw,salt){
+      try{if(window.crypto&&window.crypto.subtle){return window.crypto.subtle.digest('SHA-256',new TextEncoder().encode(salt+pw)).then(function(b){return Array.from(new Uint8Array(b)).map(function(x){return x.toString(16).padStart(2,'0');}).join('');});}}catch(e){}
+      return Promise.resolve(sha256Hex(salt+pw));
+    },
+    read:function(k){try{return JSON.parse(store.get(k)||'{}');}catch(e){return {};}},
+    signUp:function(name,email,pw){
+      var self=this,acc=this.read('sh_accounts');email=email.toLowerCase();
+      if(acc[email])return Promise.reject(new Error('already exists'));
+      var salt=Math.random().toString(36).slice(2);
+      return this.hash(pw,salt).then(function(h){acc[email]={id:'demo-'+Date.now(),name:name,salt:salt,hash:h};store.set('sh_accounts',JSON.stringify(acc));store.set('sh_session',email);return {needsConfirm:false};});
+    },
+    signIn:function(email,pw){
+      var acc=this.read('sh_accounts'),a=acc[email.toLowerCase()],self=this;
+      if(!a)return Promise.reject(new Error('incorrect email or password'));
+      return this.hash(pw,a.salt).then(function(h){if(h!==a.hash)throw new Error('incorrect email or password');store.set('sh_session',email.toLowerCase());});
+    },
+    getUser:function(){var e=store.get('sh_session');if(!e)return Promise.resolve(null);var a=this.read('sh_accounts')[e];return Promise.resolve(a?{id:a.id,email:e,name:a.name}:null);},
+    getProfile:function(){var e=store.get('sh_session');var p=this.read('sh_profiles')[e];return Promise.resolve(p||{});},
+    saveProfile:function(f){var e=store.get('sh_session');var all=this.read('sh_profiles');all[e]=Object.assign({},all[e]||{},f);store.set('sh_profiles',JSON.stringify(all));return Promise.resolve();},
+    resetPassword:function(){return Promise.resolve();},
+    updatePassword:function(){return Promise.resolve();},
+    signOut:function(){store.del('sh_session');return Promise.resolve();}
+  };
+
+  /* ===== Live backend (Supabase: auth + database) ===== */
+  var live={
+    signUp:function(name,email,pw){return sb.auth.signUp({email:email,password:pw,options:{data:{full_name:name}}}).then(function(r){if(r.error)throw r.error;return {needsConfirm:!r.data.session};});},
+    signIn:function(email,pw){return sb.auth.signInWithPassword({email:email,password:pw}).then(function(r){if(r.error)throw r.error;});},
+    getUser:function(){return sb.auth.getSession().then(function(r){var s=r.data&&r.data.session;if(!s)return null;var u=s.user;return {id:u.id,email:u.email,name:(u.user_metadata&&u.user_metadata.full_name)||''};});},
+    getProfile:function(){return sb.auth.getUser().then(function(r){var u=r.data&&r.data.user;if(!u)return {};return sb.from('profiles').select('*').eq('id',u.id).maybeSingle().then(function(x){if(x.error)throw x.error;return x.data||{};});});},
+    saveProfile:function(f){return sb.auth.getUser().then(function(r){var u=r.data&&r.data.user;if(!u)throw new Error('Not signed in');var row=Object.assign({id:u.id},f);return sb.from('profiles').upsert(row).then(function(x){if(x.error)throw x.error;});});},
+    resetPassword:function(email){return sb.auth.resetPasswordForEmail(email,{redirectTo:window.location.origin+window.location.pathname}).then(function(r){if(r.error)throw r.error;});},
+    updatePassword:function(pw){return sb.auth.updateUser({password:pw}).then(function(r){if(r.error)throw r.error;});},
+    signOut:function(){return sb.auth.signOut();}
+  };
+
+  function loadScript(src){return new Promise(function(res,rej){var s=document.createElement('script');s.src=src;s.onload=res;s.onerror=function(){rej(new Error('network'));};document.head.appendChild(s);});}
+  function setupBackend(){
+    if(CONFIG.SUPABASE_URL&&CONFIG.SUPABASE_ANON_KEY){
+      return loadScript('supabase.js').catch(function(){return loadScript('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.7/dist/umd/supabase.js');}).then(function(){
+        sb=window.supabase.createClient(CONFIG.SUPABASE_URL,CONFIG.SUPABASE_ANON_KEY);
+        api=live;state.mode='live';
+        sb.auth.onAuthStateChange(function(ev){if(ev==='PASSWORD_RECOVERY')show('reset');});
+      }).catch(function(){api=demo;state.mode='demo';});
+    }
+    api=demo;state.mode='demo';return Promise.resolve();
+  }
+
+  /* ===== Flow ===== */
+  function afterAuth(){
+    return api.getUser().then(function(u){
+      if(!u){show('welcome');return;}
+      state.user=u;
+      return api.getProfile().then(function(p){
+        if(!p||!p.id&&state.mode==='live'){return api.saveProfile({full_name:u.name}).then(function(){return api.getProfile();});}
+        return p;
+      }).then(function(p){
+        state.profile=p||{};
+        if(!state.profile.onboarded)show('location');else renderDone();
+      });
+    });
+  }
+  function renderDone(){
+    var p=state.profile||{},u=state.user||{};
+    var name=p.full_name||u.name||'there';
+    $('done-title').textContent='Welcome to ShopHive, '+name.split(' ')[0]+'!';
+    var rows=[['Name',name],['Email',u.email||'-'],['Delivery location',p.location||'Not set'],['Interests',(p.interests&&p.interests.length)?p.interests.join(', '):'Not set']];
+    $('done-card').innerHTML=rows.map(function(r){return '<div class="kv"><span>'+r[0]+'</span><span></span></div>';}).join('');
+    var spans=$('done-card').querySelectorAll('.kv span:last-child');rows.forEach(function(r,i){spans[i].textContent=r[1];});
+    $('done-src').textContent=state.mode==='live'?'Saved securely in your Supabase database.':'Demo mode: saved in this browser only.';
+    show('done');
+  }
+
+  /* ===== Events ===== */
+  document.addEventListener('click',function(e){
+    var g=e.target.closest('[data-go]');if(g){show(g.dataset.go);return;}
+    var t=e.target.closest('[data-toggle]');if(t){var i=$(t.dataset.toggle);var h=i.type==='password';i.type=h?'text':'password';t.textContent=h?'Hide':'Show';t.setAttribute('aria-label',h?'Hide password':'Show password');}
+  });
+  $('guest').addEventListener('click',function(){toast('Guest browsing is not part of this demo. Create an account to continue.');});
+
+  // Sign up
+  $('su-pw').addEventListener('input',function(){
+    var s=strength(this.value),bars=document.querySelectorAll('#s-signup .meter i'),cols=['#DC2626','#D97706','#65A30D','#16A34A'],labels=['Too weak','Weak','Good','Strong'];
+    bars.forEach(function(b,i){b.style.background=(this.value&&i<s)?cols[Math.max(0,s-1)]:'';}.bind(this));
+    $('su-meter-l').textContent=this.value?labels[Math.max(0,s-1)]+(s<2?'. Use 8+ characters with letters and numbers.':''):'';
+    if(this.value)setErr('su-pw-e','','su-pw');
+  });
+  ['su-name','su-email'].forEach(function(id){$(id).addEventListener('input',function(){setErr(id+'-e','',id);});});
+  $('su-terms').addEventListener('change',function(){setErr('su-terms-e','');});
+  $('f-signup').addEventListener('submit',function(e){
+    e.preventDefault();clearForm('su',['name','email','pw']);setErr('su-terms-e','');
+    var name=$('su-name').value.trim(),email=$('su-email').value.trim(),pw=$('su-pw').value,ok=true,first=null;
+    if(name.length<2){setErr('su-name-e','Please enter your full name.','su-name');ok=false;first=first||'su-name';}
+    if(!emailRe.test(email)){setErr('su-email-e','Enter a valid email address.','su-email');ok=false;first=first||'su-email';}
+    if(pw.length<8){setErr('su-pw-e','Password must be at least 8 characters.','su-pw');ok=false;first=first||'su-pw';}
+    else if(strength(pw)<2){setErr('su-pw-e','Add numbers or a mix of upper and lower case letters.','su-pw');ok=false;first=first||'su-pw';}
+    if(!$('su-terms').checked){setErr('su-terms-e','Please accept the Terms & Privacy Policy to continue.');ok=false;}
+    if(!ok){if(first)$(first).focus();return;}
+    var btn=$('su-btn');busy(btn,true,'Creating account…');
+    Promise.resolve().then(function(){return api.signUp(name,email,pw);}).then(function(r){
+      if(r.needsConfirm){$('li-ok').textContent='Account created! Check your email and click the confirmation link, then log in.';$('li-email').value=email;show('login');return;}
+      return api.saveProfile({full_name:name}).then(function(){return afterAuth();});
+    }).catch(function(err){$('su-form-e').textContent=friendly(err);}).then(function(){busy(btn,false,'Create Account');});
+  });
+
+  // Login
+  ['li-email','li-pw'].forEach(function(id){$(id).addEventListener('input',function(){setErr(id+'-e','',id);$('li-form-e').textContent='';});});
+  $('f-login').addEventListener('submit',function(e){
+    e.preventDefault();clearForm('li',['email','pw']);$('li-ok').textContent='';
+    var email=$('li-email').value.trim(),pw=$('li-pw').value,ok=true;
+    if(!emailRe.test(email)){setErr('li-email-e','Enter a valid email address.','li-email');ok=false;}
+    if(!pw){setErr('li-pw-e','Enter your password.','li-pw');ok=false;}
+    if(!ok)return;
+    var btn=$('li-btn');busy(btn,true,'Logging in…');
+    Promise.resolve().then(function(){return api.signIn(email,pw);}).then(function(){$('li-pw').value='';return afterAuth();}).catch(function(err){$('li-form-e').textContent=friendly(err);}).then(function(){busy(btn,false,'Log In');});
+  });
+
+  // Forgot
+  $('f-forgot').addEventListener('submit',function(e){
+    e.preventDefault();clearForm('fg',['email']);$('fg-ok').textContent='';
+    var email=$('fg-email').value.trim();
+    if(!emailRe.test(email)){setErr('fg-email-e','Enter a valid email address.','fg-email');return;}
+    var btn=$('fg-btn');busy(btn,true,'Sending…');
+    api.resetPassword(email).then(function(){$('fg-ok').textContent=state.mode==='live'?'If an account exists for '+email+', a reset link is on its way.':'Demo mode: no email is sent. In live mode you would receive a reset link.';}).catch(function(err){$('fg-form-e').textContent=friendly(err);}).then(function(){busy(btn,false,'Send Reset Link');});
+  });
+
+  // Reset
+  $('f-reset').addEventListener('submit',function(e){
+    e.preventDefault();clearForm('rs',['pw']);
+    var pw=$('rs-pw').value;
+    if(pw.length<8||strength(pw)<2){setErr('rs-pw-e','Use at least 8 characters with letters and numbers.','rs-pw');return;}
+    var btn=$('rs-btn');busy(btn,true,'Saving…');
+    api.updatePassword(pw).then(function(){toast('Password updated');return afterAuth();}).catch(function(err){$('rs-form-e').textContent=friendly(err);}).then(function(){busy(btn,false,'Save password');});
+  });
+
+  // Location
+  var sel=$('lo-state');STATES.forEach(function(s){var o=document.createElement('option');o.value=s;o.textContent=s;sel.appendChild(o);});
+  sel.addEventListener('change',function(){setErr('lo-state-e','','lo-state');});
+  $('f-location').addEventListener('submit',function(e){
+    e.preventDefault();$('lo-form-e').textContent='';setErr('lo-state-e','','lo-state');
+    var st=sel.value,city=$('lo-city').value.trim();
+    if(!st){setErr('lo-state-e','Please select your state.','lo-state');sel.focus();return;}
+    var btn=$('lo-btn');busy(btn,true,'Saving…');
+    api.saveProfile({location:(city?city+', ':'')+st}).then(function(){return api.getProfile();}).then(function(p){state.profile=p;show('interests');}).catch(function(err){$('lo-form-e').textContent=friendly(err);}).then(function(){busy(btn,false,'Save &amp; continue');});
+  });
+  $('lo-skip').addEventListener('click',function(){show('interests');});
+
+  // Interests
+  var chipBox=$('chips');INTERESTS.forEach(function(n){var b=document.createElement('button');b.type='button';b.className='chip';b.textContent=n;b.setAttribute('aria-pressed','false');b.addEventListener('click',function(){var on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',String(on));if(on)state.picked[n]=1;else delete state.picked[n];});chipBox.appendChild(b);});
+  function finishInterests(list){
+    $('in-form-e').textContent='';
+    var btn=$('in-btn');btn.disabled=true;
+    api.saveProfile({interests:list,onboarded:true}).then(function(){return api.getProfile();}).then(function(p){state.profile=p;renderDone();}).catch(function(err){$('in-form-e').textContent=friendly(err);}).then(function(){btn.disabled=false;});
+  }
+  $('in-btn').addEventListener('click',function(){finishInterests(Object.keys(state.picked));});
+  $('in-skip').addEventListener('click',function(){finishInterests([]);});
+
+  // Log out
+  $('logout').addEventListener('click',function(){api.signOut().then(function(){state.user=null;state.profile={};state.picked={};document.querySelectorAll('.chip').forEach(function(c){c.setAttribute('aria-pressed','false');});['su-name','su-email','su-pw','li-email','li-pw'].forEach(function(id){$(id).value='';});toast('You have been logged out');show('welcome');});});
+
+  /* ===== Start ===== */
+  show('splash');
+  var started=Date.now();
+  setupBackend().then(function(){
+    if(state.mode==='demo')$('banner').hidden=false;
+    return api.getUser();
+  }).then(function(u){
+    var wait=Math.max(0,1400-(Date.now()-started));
+    setTimeout(function(){if(u)afterAuth();else show('welcome');},wait);
+  }).catch(function(){show('welcome');});
+})();
+</script>
+</body>
+</html>
