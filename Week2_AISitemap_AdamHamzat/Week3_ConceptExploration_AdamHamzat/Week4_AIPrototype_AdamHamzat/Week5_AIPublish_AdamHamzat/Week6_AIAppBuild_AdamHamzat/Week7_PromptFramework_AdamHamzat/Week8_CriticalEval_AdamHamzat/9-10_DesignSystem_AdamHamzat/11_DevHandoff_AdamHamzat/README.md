@@ -2,7 +2,6 @@
 
 **Name:** Adam Hamzat
 **Dev Mode link:** https://www.figma.com/design/UwaeIAxZWKL9vcxBfsEGLA/FLEXISAF?node-id=2305-787&m=dev
-**Figma page:** 11_DevHandoff_AdamHamzat
 
 ## What is handed off
 The ShopHive buyer purchase flow, 7 screens: Welcome, Sign Up, Home, Product details, Cart, Checkout and Order placed. The screens are marked Ready for dev and linked as a prototype starting at Welcome.
